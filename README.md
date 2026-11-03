@@ -46,7 +46,7 @@ Get a free API key at [kissmypost.com/mcp](https://kissmypost.com/mcp) and repla
   "servers": {
     "kissmypost": {
       "type": "http",
-      "url": "https://kissmypost.com/api/mcp",
+      "url": "https://kissmypost.com/api/mcp?src=github",
       "headers": { "Authorization": "Bearer kmp_YOUR_API_KEY" }
     }
   }
@@ -59,7 +59,7 @@ Get a free API key at [kissmypost.com/mcp](https://kissmypost.com/mcp) and repla
 {
   "mcpServers": {
     "kissmypost": {
-      "url": "https://kissmypost.com/api/mcp",
+      "url": "https://kissmypost.com/api/mcp?src=github",
       "headers": { "Authorization": "Bearer kmp_YOUR_API_KEY" }
     }
   }
@@ -69,7 +69,7 @@ Get a free API key at [kissmypost.com/mcp](https://kissmypost.com/mcp) and repla
 **Claude Code:**
 
 ```bash
-claude mcp add --transport http kissmypost https://kissmypost.com/api/mcp --header "Authorization: Bearer kmp_YOUR_API_KEY"
+claude mcp add --transport http kissmypost "https://kissmypost.com/api/mcp?src=github" --header "Authorization: Bearer kmp_YOUR_API_KEY"
 ```
 
 Treat the key like a password. If it leaks, revoke it on [kissmypost.com/mcp](https://kissmypost.com/mcp) or in your account settings.

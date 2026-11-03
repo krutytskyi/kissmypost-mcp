@@ -3,7 +3,7 @@
   "name": "com.kissmypost/mcp",
   "title": "KissMyPost",
   "description": "Reddit audience data for AI assistants: subreddit growth, best time to post, brand mentions.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "url": "https://github.com/krutytskyi/kissmypost-mcp",
     "source": "github"
@@ -12,7 +12,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://kissmypost.com/api/mcp",
+      "url": "https://kissmypost.com/api/mcp?src=mcp-registry",
       "headers": [
         {
           "name": "Authorization",
