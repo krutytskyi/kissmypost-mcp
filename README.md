@@ -1,4 +1,6 @@
-# KissMyPost MCP server
+# KissMyPost: Reddit Audience Research (MCP server)
+
+Reddit analytics and audience research for AI assistants: find subreddits for a topic, see who is in them, the best time to post, posting rules and Reddit brand mentions. KissMyPost works as a subreddit finder and Reddit marketing tool: subreddit growth and audience stats, similar subreddits, trending topics, Reddit post and mention search, and threads worth a reply. Not affiliated with Reddit, Inc.
 
 Reddit audience data for your AI assistant. Ask about any subreddit or brand and get answers from KissMyPost data instead of guesses: how big a subreddit is and whether it is growing, when to post there, which subreddits are similar or share its audience, who the regulars are, and how often Reddit mentions a brand or a phrase.
 
