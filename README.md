@@ -17,8 +17,8 @@ All tools are read-only.
 
 | Tool | What it returns | Example prompt | Plan |
 |---|---|---|---|
-| `search_subreddits` | Subreddits whose name matches a keyword, with members and monthly posts | Find subreddits about woodworking. | free |
-| `find_subreddits_by_topic` | The most active subreddits about a topic | Which subreddits talk about home espresso? | free |
+| `search_subreddits` | Subreddits whose name contains a word, or the exact spelling of a name | Is it r/Entrepreneur or r/entrepreneurs? | free |
+| `find_subreddits_by_topic` | The most active subreddits about a topic, by whole words in names and descriptions | Which subreddits talk about home espresso? | free |
 | `subreddit_overview` | Members, 12-month growth, posts and authors per month, top topics, main language | How big is r/SaaS and is it growing? | free |
 | `best_time_to_post` | Best day and hour (UTC), whether timing matters, where the active audience is | When should I post in r/startups? | free |
 | `similar_subreddits` | Up to 10 subreddits with similar topics and 10 with an overlapping audience | Which subreddits are like r/Entrepreneur? | free |
@@ -29,11 +29,13 @@ All tools are read-only.
 | `subreddit_audience` | Who the regulars are: share of women, median age, where else they hang out | Who are the people in r/espresso? | free |
 | `compare_subreddits` | Two subreddits side by side: overlap, gender and age, interests | How are r/running people different from r/bicycling people? | free |
 | `search_research` | KissMyPost studies of Reddit data with short answers, dates and dataset DOIs | Is there data on karma requirements for new accounts? | free |
-| `search_reddit_mentions` | How often posts and comments mention a phrase, month by month, and where | How often has Reddit mentioned Cursor IDE in the last two years? | free account |
-| `search_reddit_posts` | The most relevant posts for a phrase: title, subreddit, month and link | Find Reddit posts asking for a Notion alternative. | paid |
+| `search_reddit_mentions` | How often posts and comments mention a phrase, month by month, and where. Options: `match` (`exact` phrase or `all` words anywhere), `period` (`12m` to `all` since 2005), `subreddit` | How many times was "GummySearch alternative" written, ever? | free account |
+| `search_reddit_posts` | Posts for a phrase with full text, subreddit, month and link. Options: `match`, `sort` (`relevance` or `new`), `subreddit` | Show the newest posts in r/SaaS about pricing feedback. | paid |
 | `subreddit_posting_rules` | What a subreddit allows (links, images, crossposts) and how often posts get removed | Can I post a link to my blog in r/marketing? | paid |
 | `where_to_post` | Subreddits where similar posts live and how they scored, best day and hour | Where and when should I post about my CRM for freelancers? | paid |
-| `reply_radar` | Fresh threads in your subreddits that are worth a reply, with a suggested angle | Which new threads in r/SaaS should I reply to today? | paid |
+| `reply_radar` | Fresh threads in your subreddits that are worth a reply, with past replies that did well | Which new threads in r/SaaS should I reply to today? | paid |
+
+Quotes are never needed in queries: phrase or all-words matching is the `match` option. Subreddit names work with or without `r/`, and a misspelt name returns suggestions. Every tool's full description, with examples and limits, is in the server's `tools/list`.
 
 Free accounts have daily limits; current limits and plans are on [kissmypost.com/mcp](https://kissmypost.com/mcp) and [kissmypost.com/pricing](https://kissmypost.com/pricing).
 
